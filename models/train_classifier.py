@@ -33,9 +33,7 @@ def load_data(database_filepath, table_name='Categorized_Messages'):
         X : The features dataframe.
         Y : The target(labels) dataframe.
         category_names : The categories to which a message can belong ( it will be used for data visualization (app)).
-    '''
-    #table_name = 'Disaster_Response'
-    
+    '''    
     # load the data from the SQL database
     engine = create_engine('sqlite:///{}'.format(database_filepath))
     
